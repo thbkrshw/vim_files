@@ -55,6 +55,9 @@ filetype plugin indent on
 let mapleader = "," " Définit une touche de raccourcis générale
 let g:mapleader = ","
 
+" Change pwd to the current file directory
+map <leader>cd :cd %:p:h<CR>
+
 " Write a file with superuser privilege
 command W w !sudo tee % > /dev/null
 
@@ -178,8 +181,9 @@ set statusline+=%-3.3n\                      " buffer number
 set statusline+=%f\                          " filename
 set statusline+=%h%m%r%w                     " status flags
 set statusline+=\ [%{strlen(&ft)?&ft:'none'}] " file type
-set statusline+=%#warningmsg#
+"set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k 
 set statusline+=%*
 set statusline+=%=                           " right align remainder
 set statusline+=%-14(%l,%c%V%)               " line, character
