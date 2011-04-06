@@ -4,9 +4,6 @@
 [submodule "bundle/vim-align"]
 	path = bundle/vim-align
 	url = git://github.com/tsaleh/vim-align.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
@@ -43,3 +40,36 @@
 [submodule "bundle/closetag"]
 	path = bundle/closetag
 	url = http://github.com/vim-scripts/closetag.vim.git
+[submodule "bundle/ack.git"]
+	path = bundle/ack.git
+	url = http://github.com/mileszs/ack.vim.git
+[submodule "bundle/snipmate.git"]
+	path = bundle/snipmate.git
+	url = http://github.com/msanders/snipmate.vim.git
+[submodule "bundle/vim-yankring"]
+	path = bundle/vim-yankring
+	url = http://github.com/chrismetcalf/vim-yankring.git
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = http://github.com/tpope/vim-repeat.git
+[submodule "bundle/sparql"]
+	path = bundle/sparql
+	url = git://github.com/vim-scripts/sparql.vim.git
+[submodule "bundle/easytags"]
+	path = bundle/easytags
+	url = https://github.com/vim-scripts/easytags.vim.git
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = https://github.com/leshill/vim-json.git
+[submodule "bundle/Obvious-Mode"]
+	path = bundle/Obvious-Mode
+	url = https://github.com/vim-scripts/Obvious-Mode.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git://github.com/msanders/snipmate.vim.git
+[submodule "bundle/vim-supertab"]
+	path = bundle/vim-supertab
+	url = https://github.com/tsaleh/vim-supertab.git
+[submodule "bundle/solarized.git"]
+	path = bundle/solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git

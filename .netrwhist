@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Volumes/Data/Documents/ensi/s5/projet/doc/rapport'
+let g:netrw_dirhist_2='/Volumes/Data/Documents/ensi/s5/master/article/compteRendu'
+let g:netrw_dirhist_3='/Volumes/Data/Documents/ensi/s5/projet/doc/rapport'
+let g:netrw_dirhist_4='/Volumes/Data/Documents/ensi/s5/secu/compteRendu'
+let g:netrw_dirhist_5='/Volumes/Data/Documents/ensi/s5/projet/doc/rapport'
+let g:netrw_dirhist_6='/etc/apt/sources.list.d'
+let g:netrw_dirhist_7='/home/harold/Documents/test'
