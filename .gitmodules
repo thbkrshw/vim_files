@@ -64,9 +64,6 @@
 [submodule "bundle/Obvious-Mode"]
 	path = bundle/Obvious-Mode
 	url = https://github.com/vim-scripts/Obvious-Mode.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
 [submodule "bundle/vim-supertab"]
 	path = bundle/vim-supertab
 	url = https://github.com/tsaleh/vim-supertab.git
