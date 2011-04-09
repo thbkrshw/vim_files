@@ -203,7 +203,7 @@ endif
 
 
 if has("gui_gtk")
-    set guifont=Terminus
+    set guifont=Terminus\ 8
 endif
 
 if has("gui")
