@@ -34,9 +34,6 @@
 [submodule "bundle/vim-matchit"]
 	path = bundle/vim-matchit
 	url = http://github.com/edsono/vim-matchit.git
-[submodule "bundle/closetag"]
-	path = bundle/closetag
-	url = http://github.com/vim-scripts/closetag.vim.git
 [submodule "bundle/ack.git"]
 	path = bundle/ack.git
 	url = http://github.com/mileszs/ack.vim.git
