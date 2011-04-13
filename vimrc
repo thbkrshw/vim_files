@@ -80,7 +80,7 @@ inoremap jj <ESC>
 nnoremap <leader>s <C-w>v<C-w>l
 
 " Write a file with superuser privilege
-command W w !sudo tee % > /dev/null
+command W w !su tee % > /dev/null
 
 " Rechargement rapide du .vimrc 
 map <leader>rv :source $MYVIMRC<CR>
@@ -261,7 +261,7 @@ set textwidth=80
 " Plugins {
 
 " Easytags {
-let g:easytags_cmd = '/usr/local/bin/ctags'
+"let g:easytags_cmd = '/usr/local/bin/ctags'
 " }
 
 " yankring {

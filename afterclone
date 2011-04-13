@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+import shutil
+import os
+import subprocess
+
+# Create backup directory, used to store all modification made to files
+if not os.path.exists("backup"):
+    os.mkdir("backup")
+
+# Init git submodule
+ret = subprocess.call(["git submodule update --init --recursive"])
+
+# Make symbolic link
+os.symlink("vimrc", "../.vimrc")
