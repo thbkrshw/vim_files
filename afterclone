@@ -9,7 +9,7 @@ if not os.path.exists("backup"):
     os.mkdir("backup")
 
 # Init git submodule
-ret = subprocess.call(["git submodule update --init --recursive"])
+ret = subprocess.call(["git submodule update --init --recursive"], shell=True)
 
 # Make symbolic link
-os.symlink("vimrc", "../.vimrc")
+os.symlink(os.path.abspath("vimrc"), "../.vimrc")
