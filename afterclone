@@ -12,4 +12,6 @@ if not os.path.exists("backup"):
 ret = subprocess.call(["git submodule update --init --recursive"], shell=True)
 
 # Make symbolic link
-os.symlink(os.path.abspath("vimrc"), "../.vimrc")
+vimrc = os.path.expanduser("~/.vimrc")
+if not os.path.exists(vimrc):
+    os.symlink(os.path.abspath("vimrc"), vimrc)
