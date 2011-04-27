@@ -64,3 +64,6 @@
 [submodule "bundle/solarized.git"]
 	path = bundle/solarized.git
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/vim-speeddating.git"]
+	path = bundle/vim-speeddating.git
+	url = git://github.com/tpope/vim-speeddating.git
