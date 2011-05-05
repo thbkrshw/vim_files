@@ -64,3 +64,6 @@
 [submodule "bundle/vim-speeddating.git"]
 	path = bundle/vim-speeddating.git
 	url = git://github.com/tpope/vim-speeddating.git
+[submodule "bundle/vim-align.git"]
+	path = bundle/vim-align.git
+	url = git://github.com/pix/vim-align.git
