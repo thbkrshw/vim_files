@@ -1,9 +1,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = http://github.com/scrooloose/nerdtree.git
-[submodule "bundle/vim-align"]
-	path = bundle/vim-align
-	url = git://github.com/tsaleh/vim-align.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
@@ -34,9 +31,6 @@
 [submodule "bundle/vim-matchit"]
 	path = bundle/vim-matchit
 	url = http://github.com/edsono/vim-matchit.git
-[submodule "bundle/closetag"]
-	path = bundle/closetag
-	url = http://github.com/vim-scripts/closetag.vim.git
 [submodule "bundle/ack.git"]
 	path = bundle/ack.git
 	url = http://github.com/mileszs/ack.vim.git
@@ -67,3 +61,9 @@
 [submodule "bundle/solarized.git"]
 	path = bundle/solarized.git
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/vim-speeddating.git"]
+	path = bundle/vim-speeddating.git
+	url = git://github.com/tpope/vim-speeddating.git
+[submodule "bundle/vim-align.git"]
+	path = bundle/vim-align.git
+	url = git://github.com/pix/vim-align.git
