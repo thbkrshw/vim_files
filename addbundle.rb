@@ -5,7 +5,7 @@
 # Script d'ajout d'un bundle automatique
 #
 # Exemple d'entrée : http://github.com/vim-scripts/closetag.vim.git
-require 'URI'
+require 'uri'
 
 BUNDLE_DIR = 'bundle'
 
