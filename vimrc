@@ -179,7 +179,7 @@ if has("gui_macvim")
     "set lines=50
     "set guifont=Inconsolata:h14
     "set guifont=DejaVuSansMono
-    set guifont=Terminus:h12
+    set guifont=Terminus:h14
     "set guifont=ProggyClean:h11
     "set guifont=ProggyOpti:h11
     "set guifont=ProggyTiny:h11
@@ -300,7 +300,7 @@ let Tlist_Enable_Fold_Column=0
 let Tlist_Show_One_File=1   " especially with this one 
 let Tlist_Compact_Format=1 
 set updatetime=1000 
-"let Tlist_Ctags_Cmd="/usr/local/bin/ctags"
+let Tlist_Ctags_Cmd="/usr/local/bin/ctags"
 let Tlist_Use_SingleClick=1
 
 "let Tlist_Auto_Open=1 " let the tag list open automagically
