@@ -24,7 +24,7 @@ set listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:•
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.*/
 
-au FocusLost * :wa " Enregistre le fichier dès que vim perd le focus
+au FocusLost silent! :wa " Enregistre le fichier dès que vim perd le focus
 
 
 
@@ -80,7 +80,7 @@ inoremap jj <ESC>
 nnoremap <leader>s <C-w>v<C-w>l
 
 " Write a file with superuser privilege
-command W w !su tee % > /dev/null
+"command W w !su tee % > /dev/null
 
 " Rechargement rapide du .vimrc 
 map <leader>rv :source $MYVIMRC<CR>
@@ -143,14 +143,16 @@ map <up> <ESC>:tabnext<RETURN>
 " Interface {
 syntax on " Mise en évidence de la syntaxe
 
-set cursorline " Surligne la ligne éditée
+"set cursorline " Surligne la ligne éditée. Attention consomme parfois trop de ressource
 
 set showmode " Affiche le mode courant
 set showcmd
-if version >= 703
-    set relativenumber
-endif
-"set nu " Numérotation des lignes
+"if version >= 703
+    "set relativenumber
+"else
+    set nu
+"endif
+
 set ruler " Affiche la bande d'infos en bas de la fenêtre
 
 "set lazyredraw " Ne pas rafraichir l'écran lors des macros
@@ -187,7 +189,7 @@ if has("gui_macvim")
     "set lines=50
     "set guifont=Inconsolata:h14
     "set guifont=DejaVuSansMono
-    set guifont=Terminus:h14
+    set guifont=Terminus:h12
     "set guifont=ProggyClean:h11
     "set guifont=ProggyOpti:h11
     "set guifont=ProggyTiny:h11
@@ -261,7 +263,7 @@ set textwidth=80
 " Plugins {
 
 " Easytags {
-"let g:easytags_cmd = '/usr/local/bin/ctags'
+let g:easytags_cmd = '/usr/local/bin/ctags'
 " }
 
 " yankring {
