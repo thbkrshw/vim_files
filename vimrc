@@ -79,9 +79,6 @@ inoremap jj <ESC>
 " Crée un split vertical et le rend actif
 nnoremap <leader>s <C-w>v<C-w>l
 
-" Write a file with superuser privilege
-"command W w !su tee % > /dev/null
-
 " Rechargement rapide du .vimrc 
 map <leader>rv :source $MYVIMRC<CR>
 " Édition rapide du .vimrc
@@ -116,12 +113,7 @@ nmap ,fi :call Inconsolata()<CR>
 
 
 map <leader>b <ESC>:make<CR>
-map <Leader><Space> <ESC>:call ToggleHeader()<CR>
-
-function! ToggleHeader() 
-    write
-    :A
-endfunction
+map <Leader><Space> <ESC>:FSHere<CR>
 
 map <space> /
 map <c-space> ?
@@ -261,6 +253,13 @@ set textwidth=80
 " }
 
 " Plugins {
+
+" FSwitch {
+    "au! BufEnter *.cpp let b:fswitchdst = 'hpp,h' | let b:fswitchlocs = '../inc'
+    "au! BufEnter *.c let b:fswitchdst = 'h'  | let b:fswitchlocs = '../inc'
+    au! BufEnter *.m let b:fswitchdst = 'h'  | let b:fswitchlocs = '../inc'
+    au! BufEnter *.h let b:fswitchdst = 'm'  | let b:fswitchlocs = '../inc'
+" }
 
 " Easytags {
 let g:easytags_cmd = '/usr/local/bin/ctags'

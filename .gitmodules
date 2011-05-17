@@ -67,6 +67,12 @@
 [submodule "bundle/vim-align.git"]
 	path = bundle/vim-align.git
 	url = git://github.com/pix/vim-align.git
+<<<<<<< HEAD
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+=======
+[submodule "bundle/vim-fswitch"]
+	path = bundle/vim-fswitch
+	url = https://github.com/ewiplayer/vim-fswitch.git
+>>>>>>> fa4f9fba2ee941f963753be9be6a4f53141f9fbc
