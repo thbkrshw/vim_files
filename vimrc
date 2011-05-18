@@ -181,7 +181,7 @@ if has("gui_macvim")
     "set lines=50
     "set guifont=Inconsolata:h14
     "set guifont=DejaVuSansMono
-    set guifont=Terminus:h12
+    set guifont=Terminus:h14
     "set guifont=ProggyClean:h11
     "set guifont=ProggyOpti:h11
     "set guifont=ProggyTiny:h11
