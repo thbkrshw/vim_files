@@ -332,7 +332,7 @@ let g:snips_author = "Harold Leboulanger"
 "
 " CommandT {
 map <leader>; :CommandT<CR>
-let g:CommandTMatchWindowAtTop=1
+"let g:CommandTMatchWindowAtTop=1
 " }
 
 
