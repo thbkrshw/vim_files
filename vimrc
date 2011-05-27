@@ -77,7 +77,7 @@ map <leader>cd :cd %:p:h<CR>
 inoremap jj <ESC> 
 
 " Crée un split vertical et le rend actif
-nnoremap <leader>s <C-w>v<C-w>l
+nnoremap <leader>ss <C-w>v<C-w>l
 
 " Rechargement rapide du .vimrc 
 map <leader>rv :source $MYVIMRC<CR>
@@ -106,7 +106,7 @@ nmap ,sc :call SpellCheck()<CR>
 
 " Font Inconsolata
 function! Inconsolata() 
-    set guifont=Inconsolata:h14
+    set guifont=Inconsolata:h12
 endfunction
 
 nmap ,fi :call Inconsolata()<CR>
@@ -171,23 +171,14 @@ set shortmess=atI " Réduit le prompt  "Press ENTER...
 set mouse=a
 
 " GUI {
-set ttyfast " Affichage plus rapide avec les terminaux
 if has("gui_macvim")
-    "set guioptions=-T " Suppression de la barre d'outils
     set guioptions=egmrtendif
-    "colorscheme wombat256
-    "hi CursorLine ctermbg=DarkGray " Colore la ligne éditée
-    "set columns=100
-    "set lines=50
-    "set guifont=Inconsolata:h14
-    "set guifont=DejaVuSansMono
-    set guifont=Terminus:h14
+    set guifont=Terminus:h12
     "set guifont=ProggyClean:h11
     "set guifont=ProggyOpti:h11
     "set guifont=ProggyTiny:h11
-    "set guifont=ANonymous\ Pro
+    "set guifont=Anonymous\ Pro
     "set guifont=Monaco:h9
-    "set antialias
     set mousehide " Cache le curseur lorsqu'on édite
 endif
 
@@ -227,11 +218,11 @@ set statusline+=%<%P                         " file position
 " }
 
 " Folding {
-set foldenable
-set foldmarker={,}
-set foldmethod=marker
-set foldlevel=100
-set foldopen=block,hor,mark,percent,quickfix,tag
+"set foldenable
+"set foldmarker={,}
+"set foldmethod=manual
+"set foldlevel=100
+"set foldopen=block,hor,mark,percent,quickfix,tag
 " }
 
 " Formatage du texte {
@@ -332,6 +323,7 @@ let g:snips_author = "Harold Leboulanger"
 "
 " CommandT {
 map <leader>; :CommandT<CR>
+map <leader>b :CommandTBuffer<CR>
 "let g:CommandTMatchWindowAtTop=1
 " }
 
