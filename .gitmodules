@@ -58,3 +58,6 @@
 [submodule "bundle/vim-fswitch"]
 	path = bundle/vim-fswitch
 	url = https://github.com/ewiplayer/vim-fswitch.git
+[submodule "bundle/command-t"]
+    path = bundle/command-t
+    url = https://github.com/wincent/Command-T.git
