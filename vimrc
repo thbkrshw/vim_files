@@ -182,13 +182,9 @@ if has("gui_macvim")
     set mousehide " Cache le curseur lorsqu'on édite
 endif
 
-if has("gui_gnome")
-    set guifont=Inconsolata
-endif
-
 
 if has("gui_gtk")
-    set guifont=Terminus\ 8
+    set guifont=Terminus\ 8 
 endif
 
 if has("gui")
@@ -253,7 +249,12 @@ set textwidth=80
 " }
 
 " Easytags {
-let g:easytags_cmd = '/usr/local/bin/ctags'
+if has("gui_gtk")
+    let g:easytags_cmd = '/usr/bin/ctags'
+else
+    let g:easytags_cmd = '/usr/local/bin/ctags'
+endif
+
 " }
 
 " yankring {
