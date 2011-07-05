@@ -4,9 +4,6 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
-[submodule "bundle/vim-git"]
-	path = bundle/vim-git
-	url = git://github.com/tpope/vim-git.git
 [submodule "bundle/vim-haml"]
 	path = bundle/vim-haml
 	url = git://github.com/tpope/vim-haml.git
@@ -43,15 +40,9 @@
 [submodule "bundle/sparql"]
 	path = bundle/sparql
 	url = git://github.com/vim-scripts/sparql.vim.git
-[submodule "bundle/easytags"]
-	path = bundle/easytags
-	url = https://github.com/vim-scripts/easytags.vim.git
 [submodule "bundle/vim-json"]
 	path = bundle/vim-json
 	url = https://github.com/leshill/vim-json.git
-[submodule "bundle/Obvious-Mode"]
-	path = bundle/Obvious-Mode
-	url = https://github.com/vim-scripts/Obvious-Mode.git
 [submodule "bundle/vim-supertab"]
 	path = bundle/vim-supertab
 	url = https://github.com/tsaleh/vim-supertab.git
@@ -64,8 +55,6 @@
 [submodule "bundle/vim-align.git"]
 	path = bundle/vim-align.git
 	url = git://github.com/pix/vim-align.git
-[submodule "bundle/vim-fugitive"]
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vim-fswitch"]
 	path = bundle/vim-fswitch
 	url = https://github.com/ewiplayer/vim-fswitch.git
